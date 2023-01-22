@@ -2,7 +2,7 @@
  
 
 **1. Hellow World Progam** 
- g++ HelloPrint.cpp -lpthread -o Output/HelloThread
+ `g++ HelloPrint.cpp -lpthread -o Output/HelloThread`
  ./Output/HelloThread
 
 **2. Matrix Vector Multiplication**
