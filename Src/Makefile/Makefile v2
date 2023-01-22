@@ -1,0 +1,22 @@
+CC=g++		# Choosing Compiler (C or C++)
+CFLAGS=-I.	# Choosing Compiler Flags
+
+DEPS = SomeFunction.h	#List of dependencies (usually headers)
+OBJ = MainFile.o SomeFunction.o #.cpp files compiled to . files 
+
+#The Rule says, Compile all cpp files to object (.o) files, where
+#compilation may involve dependencies (DEPS) 
+# $@ means all,,, $< means liberary cpp
+%.o: %.cpp $(DEPS)	
+	$(CC) -c -o $@ $< $(CFLAGS) 
+
+#Make Target all: compiles entire code
+all: $(OBJ)
+	$(CC) -o Compute $(OBJ) $(CFLAGS)
+
+#Make Target CLEAN: simply remove binaries and object files
+clean:
+	rm -f *.o Compute 
+
+
+

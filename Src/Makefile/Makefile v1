@@ -1,0 +1,4 @@
+Trg1: MainFile.cpp SomeFunction.cpp
+	g++ -o Compute MainFile.cpp SomeFunction.cpp -I.
+
+
