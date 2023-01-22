@@ -2,12 +2,15 @@
  
 
 **1. Hellow World Progam** 
+
  `g++ HelloPrint.cpp -lpthread -o Output/HelloThread`
- ./Output/HelloThread
+ 
+` ./Output/HelloThread`
 
 **2. Matrix Vector Multiplication**
- g++ HelloPrint.cpp -lpthread -o Output/MatrixMul
- ./Output/MatrixMul
+
+`g++ HelloPrint.cpp -lpthread -o Output/MatrixMul`
+`./Output/MatrixMul`
 
 **Learning critical section**
 **3. Calculating value of Pi**
